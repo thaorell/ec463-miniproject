@@ -24,10 +24,10 @@ while True:
     for (x,y,w,h) in cars:
         centroid = (int(x+(w/2)) , int(y+(h/2)))
         #51
-        if 270 <= centroid[1] <= 275 : 
+        if height*1/4 - 2 <= y+h <=  height*1/4 + 2: 
             count = count + 1
-        cv2.rectangle(frames,(x,y),(x+w,y+h),(233,0,255),2)
-        # cv2.putText(frames, str(y) , (x,h), cv2.FONT_HERSHEY_DUPLEX, 1 , (0,255,0))
+        cv2.rectangle(frames,(x,y),(x+w,y+h),(255,128,0),2)
+        # cv2.putText(frames, str(y+h) , (x,h), cv2.FONT_HERSHEY_DUPLEX, 1 , (0,255,0))
         cv2.putText(frames, str(count) , (50,50), cv2.FONT_HERSHEY_DUPLEX, 1 , (0,255,0))
  
    # Display frames in a window 
