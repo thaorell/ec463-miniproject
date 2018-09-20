@@ -6,7 +6,7 @@ Charles Thao '19
 
 Mohammad Hashem '19
 
-### Environment setup
+# Environment setup
 ## Clone this repo
 ```
 git clone https://github.com/thaorell/ec463-miniproject
