@@ -1,7 +1,7 @@
 import cv2
 import time
  
-cap = cv2.VideoCapture('./video2.m4v')
+cap = cv2.VideoCapture('./video.m4v')
  
 car_cascade = cv2.CascadeClassifier('./cars.xml')
 count = 0
