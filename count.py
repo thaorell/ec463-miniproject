@@ -44,6 +44,7 @@ while True:
     # Wait for Esc key to stop
     if cv2.waitKey(33) == 27:
         break
- 
+
+print(count)
 # De-allocate any associated memory usage
 cv2.destroyAllWindows()
