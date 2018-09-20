@@ -1,6 +1,7 @@
 import cv2
 import time
- 
+import datetime
+
 cap = cv2.VideoCapture('./video.m4v')
  
 car_cascade = cv2.CascadeClassifier('./cars.xml')
@@ -44,5 +45,8 @@ while True:
         break
 
 print(count)
+f = open("result.txt", "w")
+out = "The rate at " +  str(datetime.datetime.now()) +  " is " + str(rate)
+f.write(out)
 # De-allocate any associated memory usage
 cv2.destroyAllWindows()
