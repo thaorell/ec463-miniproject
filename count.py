@@ -1,15 +1,13 @@
 import cv2
 import time
  
-# capture frames from a video
-cap = cv2.VideoCapture('./video.m4v')
+cap = cv2.VideoCapture('./video2.m4v')
  
 car_cascade = cv2.CascadeClassifier('./cars.xml')
 count = 0
 rate = 0
 
 start = time.time()
-# loop runs if capturing has been initialized.
 while True:
     # reads frames from a video
     ret, frames = cap.read()
@@ -38,7 +36,7 @@ while True:
         rateText =  str(rate) + " cars per second "
         cv2.putText(frames, totalCount , (50,50), cv2.FONT_HERSHEY_DUPLEX, 1 , (0,255,0))
         cv2.putText(frames, rateText , (50,80), cv2.FONT_HERSHEY_DUPLEX, 1 , (0,255,0))
-   # Display frames in a window 
+
     cv2.imshow('video2', frames)
      
     # Wait for Esc key to stop
