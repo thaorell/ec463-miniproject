@@ -2,9 +2,9 @@ This is a mini hardware project in EC463 Senior Design for Electrical and Comput
 
 Contributors:
 
-Charles Thao: wrote script for vehicle counting using OpenCV and Python, collecting, testing and saving data to disk
+Charles Thao: wrote script for vehicle counting using OpenCV and Python, collected, tested and saved data to disk
 
-Mohammad Hashem:  connected Raspberry Pi, set up Raspbian OS and SSH access, connect Pi to the Internet
+Mohammad Hashem:  connected Raspberry Pi, set up Raspbian OS and SSH access, connected Pi to the Internet
 
 # Environment setup
 ## Clone this repo
